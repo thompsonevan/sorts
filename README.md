@@ -1,1 +1,1 @@
-trying to understand sorting algorithims like brute, merge, and bubble.
+trying to understand sorting algorithims like selection(brute), merge, and bubble.
