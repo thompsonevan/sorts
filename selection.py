@@ -3,22 +3,13 @@
 import sys
 
 def sort(list):
-	# The highest number in list
-	highestNum = 0
 	# The output list
 	newList = []
+	# Get the original list length for checking if sort is done
+	originalListLength = len(list)
 
-	# Find the highest number in the list so we have a stopping point
-	# Loop through the list
-	for y in list:
-		# If the current spot in the list is greater than the previous greater number
-		if y > highestNum:
-			# Set the highest number as the current spot
-			highestNum = y		
-
-	# Loop through the list while the highest number isnt in the last position, which means we havent gone through the whole list and sorted it
-	# For the first loop there is no last position so we have to have the 0 check so it doesnt error, list index out of range
-	while len(newList) == 0 or newList[-1] != highestNum:
+	# Loop through the sort until the new list is equal to the original in length
+	while len(newList) != originalListLength:
 		# Get the highest integer possible
 		lowestNum = sys.maxsize
 
@@ -39,4 +30,4 @@ def sort(list):
 	return newList
 
 # Sort
-print(sort([2, 3, 1, 8, 6, 7, 5, 4]))
+print(sort([0 ,2, 3, 1, 8, 6, 7, 5, 4]))
