@@ -2,11 +2,11 @@
 # Needed for max number
 import sys
 
-def sort(list):
+def sort(lst):
 	# The output list
 	newList = []
 	# Get the original list length for checking if sort is done
-	originalListLength = len(list)
+	originalListLength = len(lst)
 
 	# Loop through the sort until the new list is equal to the original in length
 	while len(newList) != originalListLength:
@@ -15,14 +15,14 @@ def sort(list):
 
 		# Find the lowest number in the list
 		# Loop through the list
-		for x in list:
+		for x in lst:
 			# If the current spot in the list is less than the previous lowest number
 			if x < lowestNum:
 				# Set the current lowest number to the current position in the list
 				lowestNum = x
 
 		# Remove the lowest number from the current list so it isnt used again
-		list.remove(lowestNum)
+		lst.remove(lowestNum)
 		# Append the lowest number to the end of the output list
 		newList.append(lowestNum)
 		
