@@ -5,6 +5,8 @@ trying to understand sorting algorithims like selection(brute), merge, and bubbl
 
 # Selection (Brute) Sort:
 O(n^2) for average, worst, and best cases
-However it is still very slow on large datasets and is considered less effiecent then insertion sort
+However it is still very slow on large datasets and is considered less effiecent then insertion sort but better than bubble sort
 
 # Insertion Sort
+
+# Buble Sort
